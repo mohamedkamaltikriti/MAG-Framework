@@ -46,7 +46,7 @@ class MAG:
         start_time = time.time()
         kick_counter = 0
 
-        while time.time() - start < self.time_limit:
+        while time.time() - start_time < self.time_limit:
             improved = True
             while improved:
                 improved = False

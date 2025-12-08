@@ -105,7 +105,7 @@ def greedy_tsp(dist):
         unvisited = np.where(~visited)[0]
         if not unvisited.size: break
         distances_to_unvisited = dist[last, unvisited]
-        next_city_index_in_unvisited = np.argmin(distances_to_unvisited]
+        next_city_index_in_unvisited = np.argmin(distances_to_unvisited) 
         next_city = unvisited[next_city_index_in_unvisited]
         path.append(next_city)
         visited[next_city] = True
